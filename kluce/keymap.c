@@ -80,6 +80,7 @@
 #define DV_NCARON RALT(DV_N)
 #define DV_SCARON RALT(DV_S)
 #define DV_ZCARON RALT(DV_Z)
+#define DV_GCARON RALT(DV_G)
 
 enum sofle_layers {
     /* _M_XYZ = Mac Os, _W_XYZ = Win/Linux */
@@ -229,7 +230,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_RAISE_SK] = LAYOUT(
   DV_ACUTE, _______,   _______,   _______,   _______,   _______,                           _______, _______,   _______,   _______,   _______,   _______,
-  _______,  DV_LACUTE, _______,   _______,   _______,   DV_YACUTE,                            _______, _______,   DV_CCARON, DV_RACUTE, DV_LCARON, _______,  
+  _______,  DV_LACUTE, _______,   _______,   _______,   DV_YACUTE,                            _______, DV_GCARON,   DV_CCARON, DV_RACUTE, DV_LCARON, _______,  
   _______,  DV_AACUTE, DV_OACUTE, DV_EACUTE, DV_UACUTE, DV_IACUTE,                         DV_DCARON, _______,   DV_TCARON, DV_NCARON, DV_SCARON, _______, 
   _______,  DV_ADIAER, DV_OCIRCU, _______,   _______,   _______,   _______,       _______, _______, _______,   _______,   _______,   DV_ZCARON, _______,
                       _______,   _______,   _______,   _______,   _______,       _______, _______, _______,   _______,   _______
