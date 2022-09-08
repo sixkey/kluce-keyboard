@@ -66,10 +66,12 @@
 #define DV_AACUTE RALT(DV_A)
 #define DV_ADIAER RALT(DV_SCLN)
 #define DV_EACUTE RALT(DV_E)
+#define DV_ECARON RALT(DV_DOT)
 #define DV_IACUTE RALT(DV_I)
 #define DV_OACUTE RALT(DV_O)
 #define DV_OCIRCU RALT(DV_Q)
 #define DV_UACUTE RALT(DV_U)
+#define DV_URING  RALT(DV_K)
 #define DV_YACUTE RALT(DV_Y)
 #define DV_CCARON RALT(DV_C)
 #define DV_DCARON RALT(DV_D)
@@ -80,7 +82,7 @@
 #define DV_NCARON RALT(DV_N)
 #define DV_SCARON RALT(DV_S)
 #define DV_ZCARON RALT(DV_Z)
-#define DV_GCARON RALT(DV_G)
+#define DV_RCARON RALT(DV_G)
 
 enum sofle_layers {
     /* _M_XYZ = Mac Os, _W_XYZ = Win/Linux */
@@ -222,17 +224,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT(
   _______, _______, _______ , _______ , _______ , _______,                           _______,  _______  , _______,  _______ ,  _______ ,_______,
-  _______,  KC_INS,  KC_PSCR,   KC_APP,  XXXXXXX, XXXXXXX,                        KC_PGUP, KC_PRVWD,   KC_UP, KC_NXTWD,_______, KC_BSPC,
-  _______, KC_LALT,  KC_LCTL,  KC_LSFT,  XXXXXXX, KC_CAPS,                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_DEL, KC_BSPC,
-  _______,KC_UNDO, KC_CUT, KC_COPY, KC_PASTE, XXXXXXX,  _______,       _______,  XXXXXXX, KC_HOME, XXXXXXX, KC_LEND,   XXXXXXX, _______,
+  _______, KC_INS,  KC_PSCR,   KC_APP,  XXXXXXX, XXXXXXX,                        KC_PGUP, KC_PRVWD,   KC_UP, KC_NXTWD,_______, KC_BSPC,
+  _______, KC_LALT, KC_LCTL,  KC_LSFT,  XXXXXXX, KC_CAPS,                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_DEL, KC_BSPC,
+  _______, KC_UNDO, KC_CUT, KC_COPY, KC_PASTE, XXXXXXX,  _______,       _______,  XXXXXXX, KC_HOME, XXXXXXX, KC_LEND,   XXXXXXX, _______,
                          _______, _______, _______, _______, KC_LALT,       _______, _______, _______, _______, _______
 ),
 
 [_RAISE_SK] = LAYOUT(
   DV_ACUTE, _______,   _______,   _______,   _______,   _______,                           _______, _______,   _______,   _______,   _______,   _______,
-  _______,  DV_LACUTE, _______,   _______,   _______,   DV_YACUTE,                            _______, DV_GCARON,   DV_CCARON, DV_RACUTE, DV_LCARON, _______,  
+  _______,  DV_LACUTE, _______,   DV_ECARON,  _______,   DV_YACUTE,                        _______, DV_RCARON,   DV_CCARON, DV_RACUTE, DV_LCARON, _______,  
   _______,  DV_AACUTE, DV_OACUTE, DV_EACUTE, DV_UACUTE, DV_IACUTE,                         DV_DCARON, _______,   DV_TCARON, DV_NCARON, DV_SCARON, _______, 
-  _______,  DV_ADIAER, DV_OCIRCU, _______,   _______,   _______,   _______,       _______, _______, _______,   _______,   _______,   DV_ZCARON, _______,
+  _______,  DV_ADIAER, DV_OCIRCU, _______,   DV_URING,   _______,   _______,       _______, _______, _______,   _______,   _______,   DV_ZCARON, _______,
                       _______,   _______,   _______,   _______,   _______,       _______, _______, _______,   _______,   _______
 ),
 /* ADJUST
