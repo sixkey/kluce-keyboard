@@ -215,7 +215,7 @@ xkb_symbols "dvorak-split" {
 
     key <AD01> { [  apostrophe,	quotedbl, lacute, Lacute	] };
     key <AD02> { [	comma,	less,   dead_cedilla, dead_caron	] };
-    key <AD03> { [      period,	greater, ecaron, Ecaron	] };
+    key <AD03> { [      period,	greater	] };
     key <AD04> { [	    p,	P		]	};
     key <AD05> { [	    y,	Y, yacute, Yacute		]	};
     key <AD06> { [	    f,	F		]	};
@@ -240,7 +240,7 @@ xkb_symbols "dvorak-split" {
 
     key <AB01> { [   semicolon,	colon, adiaeresis, Adiaeresis ] };
     key <AB02> { [	    q,	Q, ocircumflex, Ocircumflex	]	};
-    key <AB03> { [	    j,	J		]	};
+    key <AB03> { [	    j,	J, ecaron, Ecaron	]	};
     key <AB04> { [	    k,	K, uring, Uring	]	};
     key <AB05> { [	    x,	X		]	};
     key <AB06> { [	    b,	B		]	};
